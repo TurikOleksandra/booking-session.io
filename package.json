@@ -1,12 +1,14 @@
 {
-  "name": "booking-app",
+  "name": "booking-session.io",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "@babel/runtime": "^7.28.4",

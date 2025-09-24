@@ -2,9 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   compiler: {
-    styledComponents: true, // ✅ enables styled-components with SWC
+    styledComponents: true,
   },
-  reactStrictMode: true,    // (optional but recommended)
+  reactStrictMode: true,
+  output: 'export', 
+  trailingSlash: true,      
+  basePath: '/booking-session.io',
+  assetPrefix: '/booking-session.io/',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
