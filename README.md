@@ -40,29 +40,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
-
-The page will automatically reload when you make changes to the code.
-
-### Production Build
-
-Build the application for production:
-
-```bash
-npm run build
-# or
-yarn build
-# or
-pnpm build
-```
-
-### Start Production Server
-
-After building, start the production server:
-
-```bash
-npm run start
-# or
-yarn start
-# or
-pnpm start
-```
