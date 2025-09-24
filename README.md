@@ -6,8 +6,8 @@ A modern booking session form application built with Next.js, TypeScript, and st
 
 - **Frontend Framework**: [Next.js 15](https://nextjs.org/) with App Router
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [styled-components](https://styled-components.com/)
-- **Date Handling**: [date-fns](https://date-fns.org/)
+- **Styling**: [styled-components](https://styled-components.com/): CSS-in-JS with component-scoped styles, dynamic styling based on props/state, typeScript support with full type safety
+- **Date Handling**: [date-fns](https://date-fns.org/): lightweight & modular, immutable - no date mutation bugs, TypeScript native with consistent API, booking-friendly - timezone handling, validation, formatting
 ## 📦 Installation
 
 1. **Clone the repository**
