@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import { getAvailableTimes } from "@/utils/date";
 import { useHorizontalScroll } from "@/hooks/useHorizontalScroll";
+import Image from "next/image";
 import {
   Wrapper,
   Container,
@@ -47,7 +48,12 @@ const TimePicker: React.FC<TimePickerProps> = ({
         onClick={() => handleScroll("left")}
         disabled={!canScrollLeft}
       >
-        <img src="/icons/arrowLeft.svg" alt="Previous" width={24} height={24} />
+        <Image
+          src="/icons/arrowLeft.svg"
+          alt="Previous"
+          width={24}
+          height={24}
+        />
       </ArrowButton>
       <Container>
         <ScrollContainer>
@@ -73,7 +79,7 @@ const TimePicker: React.FC<TimePickerProps> = ({
         </ScrollContainer>
       </Container>
       <ArrowButton onClick={() => scroll("right")} disabled={!canScrollRight}>
-        <img src="/icons/arrowRight.svg" alt="Next" width={24} height={24} />
+        <Image src="/icons/arrowRight.svg" alt="Next" width={24} height={24} />
       </ArrowButton>
     </Wrapper>
   );

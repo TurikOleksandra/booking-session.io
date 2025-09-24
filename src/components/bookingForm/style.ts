@@ -74,15 +74,17 @@ export const ContentWrapper = styled.div`
 export const ConfirmButton = styled.button<{ $enabled: boolean }>`
   margin-top: 2rem;
   width: 100%;
-  padding: 0.875rem;
-  border-radius: 0.75rem;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
   font-weight: 600;
-  font-size: 1rem;
-  background-color: ${({ $enabled }) => ($enabled ? "#16171B" : "#DADBE8")};
-  color: ${({ $enabled }) => ($enabled ? "#ffffff" : "#a0a0a0")};
+  font-size: var(--font-size-md);
+  background-color: ${({ $enabled }) =>
+    $enabled ? "var(--color-primary)" : "var(--color-grey-50)"};
+  color: ${({ $enabled }) =>
+    $enabled ? "var(--color-primary-light)" : "var(--color-grey-100)"};
   border: none;
   cursor: ${({ $enabled }) => ($enabled ? "pointer" : "not-allowed")};
-  transition: background-color 0.2s ease-in-out;
+  transition: var(--transition-normal);
 `;
 
 export const WrapperText = styled.div`

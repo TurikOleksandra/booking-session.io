@@ -32,7 +32,6 @@ const SessionForm: React.FC<SessionFormProps> = ({ headerTitle, subTitle }) => {
           selectedDate,
           selectedTime
         );
-
         console.log({ timestamp });
         alert(`Booked for ${formattedDate}`);
       } catch (error) {
