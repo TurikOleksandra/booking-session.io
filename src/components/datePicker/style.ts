@@ -36,7 +36,7 @@ export const DateItem = styled.div`
   transition: var(--transition-normal);
 
   &.selected {
-    background-color: #fef2f8;
+    background-color: var(--color-grey-200);
     color: var(--color-primary-dark);
     border: 1px solid transparent;
   }

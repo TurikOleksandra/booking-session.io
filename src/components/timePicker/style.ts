@@ -13,7 +13,7 @@ export const TimeButton = styled.button<{ selected: boolean }>`
   transition: var(--transition-fast);
 
   &.selected {
-    background-color: var(--color-primary-light);
+    background-color: var(--color-grey-200);
     color: var(--color-primary-dark);
     border: none;
   }
