@@ -1,18 +1,77 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+:root {
+  /* Colors */
+  --color-primary: #16171B;
+  --color-primary-light: #FFFFFF;
+  --color-primary-dark: #de3a6b;
+  
+  /* Gradient colors */
+  --gradient-start: #ff8c00;
+  --gradient-end: #ff4500;
+  
+
+  --color-grey-50: #E8EBF4;
+  --color-grey-100: #f3f4f6;
+
+  --font-primary: var(--font-poppins), "Kaisei Tokumin", sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 0.75rem;
+  --spacing-lg: 1rem;
+  --spacing-xl: 1.5rem;
+  --spacing-xxl: 2.5rem;
+  
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-full: 100px;
+  
+  /* Transitions */
+  --transition-fast: all 0.15s ease-out;
+  --transition-normal: all 0.2s ease;
 }
 
-html,
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
 body {
-  max-width: 100vw;
+  font-family: var(--font-primary);
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  background-color: var(--gradient-end);
+  color: var(--color-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 a {
@@ -20,9 +79,11 @@ a {
   text-decoration: none;
 }
 
-/* Disable next/font optimizations that cause 404s in static export */
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
 }
