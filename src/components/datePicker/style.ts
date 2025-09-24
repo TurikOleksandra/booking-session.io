@@ -20,37 +20,37 @@ export const MonthLabel = styled.div`
 `;
 
 export const DateItem = styled.div`
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 4rem;
   height: 4.5rem;
-  border-radius: 1rem;
-  border: 1px solid #e5e7eb;
-  background-color: #ffffff;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-grey-50);
+  background-color: var(--color-primary-light);
   cursor: pointer;
-  font-size: 0.8125rem;
-  color: #16171b;
-  transition: all 0.2s ease-in-out;
+  font-size: var(--font-size-sm);
+  color: var(--color-primary);
+  transition: var(--transition-normal);
 
   &.selected {
     background-color: #fef2f8;
-    color: #de3a6b;
+    color: var(--color-primary-dark);
     border: 1px solid transparent;
   }
 
   &.disabled {
     opacity: 0.4;
     pointer-events: none;
-    background-color: #f9fafb;
-    color: #9ca3af;
+    background-color: var(--color-grey-100);
+    color: var(--color-grey-100);
   }
 
   &:hover:not(.selected):not(.disabled) {
-    background-color: #f3f4f6;
-    border-color: #d1d5db;
+    background-color: var(--color-grey-100);
+    border-color: var(--color-grey-50);
   }
 
   @media (max-width: 425px) {

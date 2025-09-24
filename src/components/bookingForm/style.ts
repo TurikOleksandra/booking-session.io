@@ -26,7 +26,7 @@ export const FormContainer = styled.div`
 export const Header = styled.h2`
   font-size: 1.5rem;
   text-align: center;
-  color: #111827;
+  color: var(--color-primary);
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-family: "Kaisei Tokumin", serif;
